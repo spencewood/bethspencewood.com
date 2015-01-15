@@ -1,13 +1,30 @@
 ---
 ---
 
-$background-color: #E45635;
-$metallic-silver: #CAD7DE;
+$primary: #E45635;
+$secondary: #267090;
+$tertiary: #88D030;
+
+$footer-height: 125px;
+$border-color: #cfd1c4;
+
+$background-color: $primary;
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 body{
   font-family: 'Open Sans', sans-serif;
   background-color: $background-color;
   color: #fff;
+}
+
+#container{
+  min-height: 100%;
+  position: relative;
 }
 
 header{
@@ -39,7 +56,7 @@ header{
 
   .img-profile{
     padding: 1px;
-    border: 5px solid #cfd1c4;
+    border: 5px solid $border-color;
   }
 
   .arrow-down {
@@ -52,18 +69,32 @@ header{
   }
 }
 
-// footer{
-//   background-color: black;
-//   height: 100%;
-// }
-
-.body{
+#body{
   h2{
     font-family: 'Lobster', cursive;
     font-size: 40px;
   }
 
   padding-top: 50px;
+  padding-bottom: $footer-height + 50;
   font-size: 16px;
   line-height: 26px;
+}
+
+footer{
+  a{
+    color: #fff !important;
+  }
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  background-color: $secondary;
+  border-top: 1px solid #3f819d;
+  padding-top: 25px;
+}
+
+.contact-list i{
+  font-size: 50px;
 }
