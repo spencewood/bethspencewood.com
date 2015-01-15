@@ -10,43 +10,53 @@ body{
   color: #fff;
 }
 
-.hero{
-  background-color: #F5F5F3;
-  color: #5A5A5A;
-  padding: 20px 0;
-  font-size: 18px;
-  position: relative;
+header{
+  &.hero{
+    &:after {
+      content:'';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 0;
+      height: 0;
+      border-top: solid 50px #F5F5F3;
+      border-left: solid 50px transparent;
+      border-right: solid 50px transparent;
+    }
+    background-color: #F5F5F3;
+    color: #5A5A5A;
+    padding: 20px 0;
+    font-size: 18px;
+    position: relative;
+  }
+
+  h1{
+    font-size: 45px;
+    font-weight: 800;
+  }
+
+  .img-profile{
+    padding: 1px;
+    border: 5px solid #cfd1c4;
+  }
+
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-top: 20px solid #f00;
+  }
 }
 
-.hero:after {
-  content:'';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 0;
-  height: 0;
-  border-top: solid 50px #F5F5F3;
-  border-left: solid 50px transparent;
-  border-right: solid 50px transparent;
-}
+.body{
+  h2{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+  }
 
-h1{
-  font-size: 45px;
-  font-weight: 800;
-}
-
-.img-profile{
-  padding: 1px;
-  border: 5px solid #cfd1c4;
-}
-
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-
-  border-top: 20px solid #f00;
+  padding-top: 50px;
 }
