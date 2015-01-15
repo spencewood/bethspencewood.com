@@ -5,10 +5,18 @@ $primary: #E45635;
 $secondary: #267090;
 $tertiary: #88D030;
 
-$footer-height: 125px;
-$border-color: #cfd1c4;
+$header-background-color: #F5F5F3;
+$header-text-color: #5A5A5A;
+$header-heading-color: $header-text-color;
 
-$background-color: $primary;
+$content-background-color: $primary;
+$content-text-color: #fff;
+
+$footer-height: 125px;
+$footer-background-color: $secondary;
+$footer-border-color: #3f819d;
+
+$border-color: #cfd1c4;
 
 html, body{
   margin: 0;
@@ -18,8 +26,8 @@ html, body{
 
 body{
   font-family: 'Open Sans', sans-serif;
-  background-color: $background-color;
-  color: #fff;
+  background-color: $content-background-color;
+  color: $content-text-color;
 }
 
 #container{
@@ -38,12 +46,12 @@ header{
       margin: 0 auto;
       width: 0;
       height: 0;
-      border-top: solid 50px #F5F5F3;
+      border-top: solid 50px $header-background-color;
       border-left: solid 50px transparent;
       border-right: solid 50px transparent;
     }
-    background-color: #F5F5F3;
-    color: #5A5A5A;
+    background-color: $header-background-color;
+    color: $header-text-color;
     padding: 20px 0;
     font-size: 18px;
     position: relative;
@@ -52,20 +60,12 @@ header{
   h1{
     font-size: 45px;
     font-weight: 800;
+    color: $header-heading-color;
   }
 
   .img-profile{
     padding: 1px;
     border: 5px solid $border-color;
-  }
-
-  .arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-
-    border-top: 20px solid #f00;
   }
 }
 
@@ -90,7 +90,7 @@ footer{
   bottom: 0;
   width: 100%;
   height: $footer-height;
-  background-color: $secondary;
+  background-color: $footer-background-color;
   border-top: 1px solid #3f819d;
   padding-top: 25px;
 }
