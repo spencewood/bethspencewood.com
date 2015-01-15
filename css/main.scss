@@ -1,0 +1,51 @@
+---
+---
+
+$background-color: #E45635;
+$metallic-silver: #CAD7DE;
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: $background-color;
+  color: #fff;
+}
+
+.hero{
+  background-color: #F5F5F3;
+  color: #5A5A5A;
+  padding: 20px 0;
+  font-size: 18px;
+  position: relative;
+}
+
+.hero:after {
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-top: solid 50px #F5F5F3;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+}
+
+h1{
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.img-profile{
+  border: 5px solid #cfd1c4;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #f00;
+}
